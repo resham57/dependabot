@@ -3,7 +3,11 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send('Hello World');  
+    res.send('Hello World');
+});
+
+app.get('/test', (req, res) => {
+    res.send('Just for test');
 });
 
 app.post('/submit-form', (req, res) => {
